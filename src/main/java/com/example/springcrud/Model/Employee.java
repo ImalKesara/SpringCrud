@@ -6,8 +6,8 @@ import jakarta.persistence.*;
 public class Employee {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private int NIC;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long NIC;
 
     @Column(name = "Name")
     private String Name;
@@ -22,7 +22,7 @@ public class Employee {
     private String email;
 
 
-    public int getNIC() {
+    public long getNIC() {
         return NIC;
     }
 
