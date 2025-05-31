@@ -29,6 +29,7 @@
                 <td th:text="${employee.getEmail()}"></td>
                 <td>
                 <a th:href="@{/updateEmployee/{id}(id=${employee.NIC})}" class = "btn btn-warning btn-sm mb-3">Update</a>
+                    <a th:href="@{/deleteEmployee/{id}(id=${employee.NIC})}" class = "btn btn-danger btn-sm mb-3">Delete</a>
                 </td>
             </tr>
             </tbody>
