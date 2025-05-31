@@ -17,6 +17,7 @@
                     <th>Home Address</th>
                     <th>Salary</th>
                     <th>Email</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -26,6 +27,9 @@
                 <td th:text="${employee.getAddress()}"></td>
                 <td th:text="${employee.getSalary()}"></td>
                 <td th:text="${employee.getEmail()}"></td>
+                <td>
+                <a th:href="@{/updateEmployee/{id}(id=${employee.NIC})}" class = "btn btn-warning btn-sm mb-3">Update</a>
+                </td>
             </tr>
             </tbody>
         </table>

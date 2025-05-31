@@ -26,7 +26,7 @@ public class Employee {
         return NIC;
     }
 
-    public void setNIC(int NIC) {
+    public void setNIC(long NIC) {
         this.NIC = NIC;
     }
 
